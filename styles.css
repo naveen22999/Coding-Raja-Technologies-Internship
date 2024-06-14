@@ -1,0 +1,29 @@
+body {
+    background-color: #f8f9fa;
+    color: #343a40;
+}
+
+.resume-preview {
+    border: 1px solid #ddd;
+    padding: 20px;
+    margin-top: 20px;
+    background: #ffffff;
+}
+
+.resume-preview h2, .resume-preview h3 {
+    border-bottom: 2px solid #007bff;
+    padding-bottom: 5px;
+}
+
+.resume-preview p, .resume-preview ul {
+    margin-bottom: 10px;
+}
+
+.resume-preview ul {
+    list-style-type: disc;
+    padding-left: 20px;
+}
+
+textarea.form-control {
+    resize: none;
+}

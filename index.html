@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resume Builder</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1 class="text-center my-4">Resume Builder</h1>
+        <form id="resumeForm">
+            <div class="form-group">
+                <label for="templateSelect">Choose Template</label>
+                <select class="form-control" id="templateSelect">
+                    <option value="template1">Template 1</option>
+                    <option value="template2">Template 2</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="name">Name</label>
+                <input type="text" class="form-control" id="name" required>
+            </div>
+            <div class="form-group">
+                <label for="contact">Contact</label>
+                <input type="text" class="form-control" id="contact" required>
+            </div>
+            <div class="form-group">
+                <label for="education">Education</label>
+                <textarea class="form-control" id="education" rows="3" required></textarea>
+            </div>
+            <div class="form-group">
+                <label for="experience">Work Experience</label>
+                <textarea class="form-control" id="experience" rows="3" required></textarea>
+            </div>
+            <div class="form-group">
+                <label for="skills">Skills</label>
+                <textarea class="form-control" id="skills" rows="3" required></textarea>
+            </div>
+            <button type="button" class="btn btn-primary" onclick="generateResume()">Preview</button>
+            <button type="button" class="btn btn-success" onclick="downloadPDF()">Download as PDF</button>
+        </form>
+
+        <div id="resumePreview" class="resume-preview my-4"></div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/1.3.5/jspdf.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
